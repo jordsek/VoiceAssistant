@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0354AB4A2BA9E40F007CE74B /* VoiceAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB492BA9E40F007CE74B /* VoiceAssistantApp.swift */; };
+		0354AB4C2BA9E40F007CE74B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB4B2BA9E40F007CE74B /* ContentView.swift */; };
+		0354AB4E2BA9E411007CE74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0354AB4D2BA9E411007CE74B /* Assets.xcassets */; };
+		0354AB522BA9E411007CE74B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0354AB512BA9E411007CE74B /* Preview Assets.xcassets */; };
+		0354AB5C2BA9E411007CE74B /* VoiceAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB5B2BA9E411007CE74B /* VoiceAssistantTests.swift */; };
+		0354AB662BA9E411007CE74B /* VoiceAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB652BA9E411007CE74B /* VoiceAssistantUITests.swift */; };
+		0354AB682BA9E411007CE74B /* VoiceAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB672BA9E411007CE74B /* VoiceAssistantUITestsLaunchTests.swift */; };
+		0354AB782BA9E922007CE74B /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB772BA9E922007CE74B /* model.swift */; };
+		0354AB7B2BA9EB0E007CE74B /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354AB7A2BA9EB0E007CE74B /* viewModel.swift */; };
+		0354AB7D2BA9EBA3007CE74B /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 0354AB7C2BA9EBA3007CE74B /* XCAOpenAIClient */; };
+		0354AB7F2BAA222A007CE74B /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = 0354AB7E2BAA222A007CE74B /* SiriWaveView */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0354AB582BA9E411007CE74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0354AB3E2BA9E40F007CE74B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0354AB452BA9E40F007CE74B;
+			remoteInfo = VoiceAssistant;
+		};
+		0354AB622BA9E411007CE74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0354AB3E2BA9E40F007CE74B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0354AB452BA9E40F007CE74B;
+			remoteInfo = VoiceAssistant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0354AB462BA9E40F007CE74B /* VoiceAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0354AB492BA9E40F007CE74B /* VoiceAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantApp.swift; sourceTree = "<group>"; };
+		0354AB4B2BA9E40F007CE74B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0354AB4D2BA9E411007CE74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0354AB4F2BA9E411007CE74B /* VoiceAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceAssistant.entitlements; sourceTree = "<group>"; };
+		0354AB512BA9E411007CE74B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0354AB572BA9E411007CE74B /* VoiceAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0354AB5B2BA9E411007CE74B /* VoiceAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantTests.swift; sourceTree = "<group>"; };
+		0354AB612BA9E411007CE74B /* VoiceAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0354AB652BA9E411007CE74B /* VoiceAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantUITests.swift; sourceTree = "<group>"; };
+		0354AB672BA9E411007CE74B /* VoiceAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0354AB772BA9E922007CE74B /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		0354AB7A2BA9EB0E007CE74B /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0354AB432BA9E40F007CE74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0354AB7D2BA9EBA3007CE74B /* XCAOpenAIClient in Frameworks */,
+				0354AB7F2BAA222A007CE74B /* SiriWaveView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0354AB542BA9E411007CE74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0354AB5E2BA9E411007CE74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0354AB3D2BA9E40F007CE74B = {
+			isa = PBXGroup;
+			children = (
+				0354AB482BA9E40F007CE74B /* VoiceAssistant */,
+				0354AB5A2BA9E411007CE74B /* VoiceAssistantTests */,
+				0354AB642BA9E411007CE74B /* VoiceAssistantUITests */,
+				0354AB472BA9E40F007CE74B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0354AB472BA9E40F007CE74B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB462BA9E40F007CE74B /* VoiceAssistant.app */,
+				0354AB572BA9E411007CE74B /* VoiceAssistantTests.xctest */,
+				0354AB612BA9E411007CE74B /* VoiceAssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0354AB482BA9E40F007CE74B /* VoiceAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB792BA9EAEA007CE74B /* ViewModel */,
+				0354AB762BA9E90C007CE74B /* Model */,
+				0354AB492BA9E40F007CE74B /* VoiceAssistantApp.swift */,
+				0354AB4B2BA9E40F007CE74B /* ContentView.swift */,
+				0354AB4D2BA9E411007CE74B /* Assets.xcassets */,
+				0354AB4F2BA9E411007CE74B /* VoiceAssistant.entitlements */,
+				0354AB502BA9E411007CE74B /* Preview Content */,
+			);
+			path = VoiceAssistant;
+			sourceTree = "<group>";
+		};
+		0354AB502BA9E411007CE74B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB512BA9E411007CE74B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0354AB5A2BA9E411007CE74B /* VoiceAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB5B2BA9E411007CE74B /* VoiceAssistantTests.swift */,
+			);
+			path = VoiceAssistantTests;
+			sourceTree = "<group>";
+		};
+		0354AB642BA9E411007CE74B /* VoiceAssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB652BA9E411007CE74B /* VoiceAssistantUITests.swift */,
+				0354AB672BA9E411007CE74B /* VoiceAssistantUITestsLaunchTests.swift */,
+			);
+			path = VoiceAssistantUITests;
+			sourceTree = "<group>";
+		};
+		0354AB762BA9E90C007CE74B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB772BA9E922007CE74B /* model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0354AB792BA9EAEA007CE74B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0354AB7A2BA9EB0E007CE74B /* viewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0354AB452BA9E40F007CE74B /* VoiceAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0354AB6B2BA9E411007CE74B /* Build configuration list for PBXNativeTarget "VoiceAssistant" */;
+			buildPhases = (
+				0354AB422BA9E40F007CE74B /* Sources */,
+				0354AB432BA9E40F007CE74B /* Frameworks */,
+				0354AB442BA9E40F007CE74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceAssistant;
+			packageProductDependencies = (
+				0354AB7C2BA9EBA3007CE74B /* XCAOpenAIClient */,
+				0354AB7E2BAA222A007CE74B /* SiriWaveView */,
+			);
+			productName = VoiceAssistant;
+			productReference = 0354AB462BA9E40F007CE74B /* VoiceAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0354AB562BA9E411007CE74B /* VoiceAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0354AB6E2BA9E411007CE74B /* Build configuration list for PBXNativeTarget "VoiceAssistantTests" */;
+			buildPhases = (
+				0354AB532BA9E411007CE74B /* Sources */,
+				0354AB542BA9E411007CE74B /* Frameworks */,
+				0354AB552BA9E411007CE74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0354AB592BA9E411007CE74B /* PBXTargetDependency */,
+			);
+			name = VoiceAssistantTests;
+			productName = VoiceAssistantTests;
+			productReference = 0354AB572BA9E411007CE74B /* VoiceAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0354AB602BA9E411007CE74B /* VoiceAssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0354AB712BA9E411007CE74B /* Build configuration list for PBXNativeTarget "VoiceAssistantUITests" */;
+			buildPhases = (
+				0354AB5D2BA9E411007CE74B /* Sources */,
+				0354AB5E2BA9E411007CE74B /* Frameworks */,
+				0354AB5F2BA9E411007CE74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0354AB632BA9E411007CE74B /* PBXTargetDependency */,
+			);
+			name = VoiceAssistantUITests;
+			productName = VoiceAssistantUITests;
+			productReference = 0354AB612BA9E411007CE74B /* VoiceAssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0354AB3E2BA9E40F007CE74B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					0354AB452BA9E40F007CE74B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					0354AB562BA9E411007CE74B = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 0354AB452BA9E40F007CE74B;
+					};
+					0354AB602BA9E411007CE74B = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 0354AB452BA9E40F007CE74B;
+					};
+				};
+			};
+			buildConfigurationList = 0354AB412BA9E40F007CE74B /* Build configuration list for PBXProject "VoiceAssistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0354AB3D2BA9E40F007CE74B;
+			packageReferences = (
+				0354AB742BA9E55A007CE74B /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+				0354AB752BA9E5A7007CE74B /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+			);
+			productRefGroup = 0354AB472BA9E40F007CE74B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0354AB452BA9E40F007CE74B /* VoiceAssistant */,
+				0354AB562BA9E411007CE74B /* VoiceAssistantTests */,
+				0354AB602BA9E411007CE74B /* VoiceAssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0354AB442BA9E40F007CE74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0354AB522BA9E411007CE74B /* Preview Assets.xcassets in Resources */,
+				0354AB4E2BA9E411007CE74B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0354AB552BA9E411007CE74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0354AB5F2BA9E411007CE74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0354AB422BA9E40F007CE74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0354AB4C2BA9E40F007CE74B /* ContentView.swift in Sources */,
+				0354AB782BA9E922007CE74B /* model.swift in Sources */,
+				0354AB7B2BA9EB0E007CE74B /* viewModel.swift in Sources */,
+				0354AB4A2BA9E40F007CE74B /* VoiceAssistantApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0354AB532BA9E411007CE74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0354AB5C2BA9E411007CE74B /* VoiceAssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0354AB5D2BA9E411007CE74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0354AB682BA9E411007CE74B /* VoiceAssistantUITestsLaunchTests.swift in Sources */,
+				0354AB662BA9E411007CE74B /* VoiceAssistantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0354AB592BA9E411007CE74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0354AB452BA9E40F007CE74B /* VoiceAssistant */;
+			targetProxy = 0354AB582BA9E411007CE74B /* PBXContainerItemProxy */;
+		};
+		0354AB632BA9E411007CE74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0354AB452BA9E40F007CE74B /* VoiceAssistant */;
+			targetProxy = 0354AB622BA9E411007CE74B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0354AB692BA9E411007CE74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0354AB6A2BA9E411007CE74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0354AB6C2BA9E411007CE74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VoiceAssistant/VoiceAssistant.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceAssistant/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Chat to AI assistant";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordan.VoiceAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		0354AB6D2BA9E411007CE74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VoiceAssistant/VoiceAssistant.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceAssistant/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Chat to AI assistant";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordan.VoiceAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		0354AB6F2BA9E411007CE74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordan.VoiceAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceAssistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceAssistant";
+			};
+			name = Debug;
+		};
+		0354AB702BA9E411007CE74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordan.VoiceAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceAssistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceAssistant";
+			};
+			name = Release;
+		};
+		0354AB722BA9E411007CE74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordan.VoiceAssistantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceAssistant;
+			};
+			name = Debug;
+		};
+		0354AB732BA9E411007CE74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jordan.VoiceAssistantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceAssistant;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0354AB412BA9E40F007CE74B /* Build configuration list for PBXProject "VoiceAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0354AB692BA9E411007CE74B /* Debug */,
+				0354AB6A2BA9E411007CE74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0354AB6B2BA9E411007CE74B /* Build configuration list for PBXNativeTarget "VoiceAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0354AB6C2BA9E411007CE74B /* Debug */,
+				0354AB6D2BA9E411007CE74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0354AB6E2BA9E411007CE74B /* Build configuration list for PBXNativeTarget "VoiceAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0354AB6F2BA9E411007CE74B /* Debug */,
+				0354AB702BA9E411007CE74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0354AB712BA9E411007CE74B /* Build configuration list for PBXNativeTarget "VoiceAssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0354AB722BA9E411007CE74B /* Debug */,
+				0354AB732BA9E411007CE74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0354AB742BA9E55A007CE74B /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0354AB752BA9E5A7007CE74B /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0354AB7C2BA9EBA3007CE74B /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0354AB752BA9E5A7007CE74B /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+		0354AB7E2BAA222A007CE74B /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0354AB742BA9E55A007CE74B /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0354AB3E2BA9E40F007CE74B /* Project object */;
+}
