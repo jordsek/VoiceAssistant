@@ -10,6 +10,7 @@ import SiriWaveView
 
 struct ContentView: View {
     @State var vm = VoiceAssistantViewModel()
+    @State var isSysmbilAnimating = false
     var body: some View {
         VStack(spacing: 16) {
             Text("Voice Assistant")
@@ -55,6 +56,16 @@ struct ContentView: View {
         switch vm.state {
         case .idle, .error:
             startCaptureButton
+        case .processingSpeech:
+            Image(systemName: "person.2.wave.2.fill")
+                //.symbolEffect(.bounce.up.bylayer, options: repeating, value: isSysmbilAnimating)
+                .offset(y: isSysmbilAnimating ? 35 : -35)
+                .animation(.easeOut(duration: 4)
+                    .repeatForever(), value: isSysmbilAnimating)
+                .font(.system(size: 128))
+                .onAppear { isSysmbilAnimating = true }
+                .onDisappear { isSysmbilAnimating = false}
+            
         default: EmptyView()
         }
     }
@@ -73,7 +84,7 @@ struct ContentView: View {
         Button {
             vm.startCapturedAudio()
         } label: {
-            Image(systemName: "mic.circle")
+            Image(systemName: "mic.and.signal.meter.fill")
                 .symbolRenderingMode(.multicolor)
                 .font(.system(size: 120))
         }
