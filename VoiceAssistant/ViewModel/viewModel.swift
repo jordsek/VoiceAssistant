@@ -12,7 +12,7 @@ import Foundation
 @Observable
 class VoiceAssistantViewModel: NSObject {
     
-    let client = OpenAIClient(apiKey: "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")
+    let client = OpenAIClient(apiKey: "")
     
     var selectedVoice = VoiceType.alloy
     var state = VoiceChatState.idle {
